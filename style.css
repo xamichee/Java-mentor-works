@@ -74,8 +74,24 @@ a.fb, a.ld, a.register {
 
 .or {
     position: absolute;
-    left: 32%;
-    top: 26%;
+    left: 48%;
+    top: 27%;
+}
+
+.or::before, .or::after{
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 1px;
+    background: darkgrey;
+    position: absolute;
+    right: 110%;
+    top: 50%;
+}
+
+.or::after{
+    content: "";
+    left: 110%;
 }
 
 hr {
