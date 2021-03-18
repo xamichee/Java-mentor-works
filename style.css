@@ -2,6 +2,80 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 0.9vw;
+}
+
+body {
+    background: gainsboro;
+    font-family: 'Barlow', sans-serif;
+    padding: 5%;
+}
+
+main {
+    background: white;
+    height: 1000px;
+    box-shadow: 4px 4px 10px -2px rgba(34, 60, 80, 0.2);
+}
+
+h1 {
+    font-size: 1.8vw;
+}
+
+.left {
+    background: url(bg.jpg) 0 0/100% 100%;
+    width: 55%;
+    height: 100%;
+    float:left;
+}
+
+.logo {
+    margin: 4% 5%;
+}
+
+.right {
+    width: 36%;
+    height: 80%;
+    float:left;
+    position: relative;
+    top: 8%;
+    left: 4%;
+}
+
+a.fb, a.ld, a.register {
+    text-decoration: none;
+    user-select: none;
+    width: 45%;
+    outline: none;
+    padding: 0.5em 0 0.8em 0.8em;
+    color: #fff;
+}
+.fb {
+    background: #3b5998;
+    position: absolute;
+    left: 0;
+}
+
+.ld {
+    background: #2867B2;
+    position: absolute;
+    right: 0;
+}
+
+.register {
+    background: #3698fb;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
+    padding: 0.5em 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.or {
+    position: absolute;
+    left: 32%;
+    top: 26%;
 }
 
 hr {
@@ -11,80 +85,7 @@ hr {
     color: darkgray;
 }
 
-body {
-    background: gainsboro;
-    font-family: 'Barlow', sans-serif;
-
-}
-
-.main {
-    background: white;
-    max-width: 90%;
-    height: 1000px;
-    box-shadow: 4px 4px 10px -2px rgba(34, 60, 80, 0.2);
-    /*border: solid;*/
-    margin: 80px auto;
-}
-
-.logo {
-    margin: 40px 50px;
-}
-
-.left {
-    background: url(bg.jpg) 0 0/100% 100%;
-    width: 55%;
-    height: 1000px;
-    float:left;
-}
-
-.right {
-    width: 36%;
-    height: 78%;
-    float:left;
-    position: relative;
-    top: 11%;
-    left: 4%;
-}
-
-.register {
-    background: #3698fb;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    user-select: none;
-    padding: 0.5em 4em;
-    outline: none;
-    width: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.fb {
-    background: #3b5998;
-    color: #fff;
-    text-decoration: none;
-    user-select: none;
-    padding: 0.5em 4em 0.8em 0.8em;
-    outline: none;
-    width: auto;
-    position: absolute;
-    left: 0;
-}
-
-.ld {
-    background: #2867B2;
-    color: #fff;
-    text-decoration: none;
-    user-select: none;
-    padding: 0.5em 4em 0.8em 0.8em;
-    outline: none;
-    width: auto;
-    position: absolute;
-    right: 0;
-}
-
-.fb:hover, .ld:hover {background: #3698fb}
+.fb:hover, .ld:hover, .fb:focus, .ld:focus {background: #3698fb}
 
 #Capa_1 {
     height: 20px;
@@ -92,30 +93,24 @@ body {
     position: relative;
     top: 4px;
 }
-/*a.knopka:hover { background: rgb(232,95,76); } !* при наведении курсора мышки *!*/
-/*a.knopka:active { background: rgb(152,15,0); } !* при нажатии *!*/
-
-#or {
+input.email, input.phone {
     position: absolute;
-    left: 32%;
-    top: 26%;
-
+    top: 34%;
+    width: 45%;
+    height: 50px;
+    padding-left: 5px;
 }
 
+/*input.email:focus, input.phone:focus {*/
+/*    border: 6px;*/
+/*}*/
+
 .email{
-    position: absolute;
     left: 0;
-    top: 34%;
-    height: 40px;
-    width: 45%;
 }
 
 .phone{
-    position: absolute;
-    top: 34%;
     right: 0;
-    height: 40px;
-    width: 45%;
 }
 
 .radio {
@@ -125,14 +120,37 @@ body {
     margin: 50px 0 0 0;
 }
 
+label {
+    padding-left: 8px;
+    padding-right: 40px;
+}
+
+.whoAmI {
+    position: absolute;
+    top: 70%;
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+    padding: 7px;
+}
+
+.whoAmI_text {
+    font-size: 0.9rem;
+}
+
 .disclaimer {
     position: absolute;
     bottom: 10%;
 }
 
-label {
-    padding-left: 8px;
-    padding-right: 40px;
+.terms {
+    color: blue;
+    text-decoration: underline;
+}
+
+.terms:visited {
+    color: blueviolet;
 }
 
 span {
