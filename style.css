@@ -94,12 +94,6 @@ a.fb, a.ld, a.register {
     left: 110%;
 }
 
-hr {
-    display: inline-flex;
-    position: relative;
-    bottom: 5px;
-    color: darkgray;
-}
 
 .fb:hover, .ld:hover, .fb:focus, .ld:focus {background: #3698fb}
 
@@ -109,20 +103,19 @@ hr {
     position: relative;
     top: 4px;
 }
-input.email, input.phone {
+
+.forms {
     position: absolute;
-    top: 34%;
+    top: 35%;
+    width: 100%;
+}
+
+.forms input {
+    position: absolute;
     width: 45%;
     height: 50px;
     padding-left: 5px;
-}
-
-/*input.email:focus, input.phone:focus {*/
-/*    border: 6px;*/
-/*}*/
-
-.email{
-    left: 0;
+    opacity: 0.5;
 }
 
 .phone{

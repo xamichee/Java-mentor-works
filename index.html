@@ -59,8 +59,14 @@
 
             <form action="">
 
-                <input type="email" class="email" placeholder="Email">
-                <input type="tel" class="phone" placeholder="Phone">
+                <div class="forms">
+                    <input type="email" id="email">
+                    <label for="email" style="padding-right: 45%">Email</label>
+
+                    <input type="tel" id="phone" class="phone">
+                    <label for="phone">Phone</label>
+                </div>
+
 
                 <div style="position: absolute; top: 50%">
                     <h2>What type of investor are you?</h2><br>
@@ -68,20 +74,20 @@
                 </div>
 
                 <div class="radio">
-                    <input id="radio-1" type="radio" name="whoAreYou" value="Individual" checked>
-                    <label for="radio-1">
+                    <label>
+                        <input id="radio-1" type="radio" name="whoAreYou" value="Individual" checked>
                         Individual <span>&#9432</span>
                     </label>
-                    <input id="radio-2" type="radio" name="whoAreYou" value="Business" >
-                    <label for="radio-2">
+                    <label>
+                        <input id="radio-2" type="radio" name="whoAreYou" value="Business" >
                         Business <span>&#9432</span>
                     </label>
-                    <input id="radio-3" type="radio" name="whoAreYou" value="IRA" >
-                    <label for="radio-3">
-                        IRA <span>&#9432</span>
+                    <label>
+                         <input id="radio-3" type="radio" name="whoAreYou" value="IRA" >
+                         IRA <span>&#9432</span>
                     </label>
-                    <input id="radio-4" type="radio" name="whoAreYou" value="Trust" >
-                    <label for="radio-4">
+                    <label>
+                        <input id="radio-4" type="radio" name="whoAreYou" value="Trust" >
                         Trust <span>&#9432</span>
                     </label>
                 </div>
